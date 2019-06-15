@@ -1,7 +1,10 @@
 import React from "react";
+import Encounters from "./encouters";
 
 export default function Root(props: RootProps) {
-  return <div>Hackathon seed is working!</div>;
+  return <Encounters patientUuid={props.patientUuid} />;
 }
 
-type RootProps = {};
+type RootProps = {
+  patientUuid?: string;
+};
